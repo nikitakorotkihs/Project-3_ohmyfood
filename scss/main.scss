@@ -64,7 +64,6 @@
     color: grey;
     font-size: 50px;
     max-width: 100%;
-
 }
 
 .explore-btn {
@@ -162,27 +161,32 @@ display: flex;
     flex-direction: right;
 }
 
-.footer{
+footer {
 font-size: 0.85rem;
 padding: 20px 0;
 line-height: 1.6;
-background: #2F4F4F;
+background: #242323;
+}
+.box__logo-image{
+padding-left: 50px;
+
 }
 
-.box__logo-image {
-    width: auto;  
-    text-align: center;  
-    padding: 15px;  
-    border: 3px solid red; 
-}
-
-.footer__logo-image {   
-    max-width: 100%;  
-    height: auto; 
+.footer__logo-image {
+    max-width: 100px;
+    height: auto;
+    filter: invert(100%); 
 }
 
 .footer__text{
-    color: #aaaaaa;
-    padding: 3px 15px;
-    display: block;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.icon_footer{
+padding-bottom: 10px;
+font-weight: map-get($font-weights, "bold" );
+    
 }
