@@ -40,8 +40,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   background: #DCDCDC;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .location_icon {
@@ -67,7 +67,7 @@
       -ms-flex-align: center;
           align-items: center;
   background: #FFFAF0;
-  padding-bottom: 100px;
+  padding-bottom: 6.25rem;
 }
 
 .home__greeting {
@@ -84,13 +84,13 @@
 }
 
 .text-bold {
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: 700;
 }
 
 .text-grey {
   color: grey;
-  font-size: 50px;
+  font-size: 3.125rem;
   max-width: 100%;
 }
 
@@ -124,7 +124,7 @@
   font-family: Helvetica;
   font-size: 4rem;
   font-weight: 700;
-  padding-left: 3%;
+  padding-left: 3rem;
 }
 
 .menu-container {
@@ -140,7 +140,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 50px;
+  padding-bottom: 3.125rem;
 }
 
 .menu {
@@ -155,9 +155,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 100px;
-  padding-top: 100px;
-  padding-left: 3%;
+  padding-bottom: 6.25rem;
+  padding-top: 6.25rem;
+  padding-left: 3.125rem;
 }
 
 .btn-choose {
@@ -194,8 +194,8 @@
           transform: translate(-50%, -50%);
   left: 0;
   top: 50%;
-  height: 50px;
-  width: 50px;
+  height: 3.125rem;
+  width: 3.125rem;
   border: 5px solid purple;
   background: purple;
   color: white;
@@ -205,7 +205,6 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  content: '1';
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -213,6 +212,7 @@
       align-content: center;
   font-weight: 700;
   font-size: 2rem;
+  content: '1';
 }
 
 .btn-create {
@@ -249,8 +249,8 @@
           transform: translate(-50%, -50%);
   left: 0;
   top: 50%;
-  height: 50px;
-  width: 50px;
+  height: 3.125rem;
+  width: 3.125rem;
   border: 5px solid purple;
   background: purple;
   color: white;
@@ -260,7 +260,6 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  content: '2';
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -268,6 +267,7 @@
       align-content: center;
   font-weight: 700;
   font-size: 2rem;
+  content: '2';
 }
 
 .btn-enjoy {
@@ -304,8 +304,8 @@
           transform: translate(-50%, -50%);
   left: 0;
   top: 50%;
-  height: 50px;
-  width: 50px;
+  height: 3.125rem;
+  width: 3.125rem;
   border: 5px solid purple;
   background: purple;
   color: white;
@@ -315,7 +315,6 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  content: '3';
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -323,6 +322,7 @@
       align-content: center;
   font-weight: 700;
   font-size: 2rem;
+  content: '3';
 }
 
 .btn__text {
@@ -334,8 +334,8 @@
 
 .row_icon1 {
   font-size: 3rem;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 6.25rem;
+  padding-right: 6.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,8 +343,8 @@
 
 .row_icon2 {
   font-size: 3rem;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 6.25rem;
+  padding-right: 6.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -354,12 +354,12 @@
 .poloroid {
   width: 85%;
   background-color: white;
-  margin-bottom: 25px;
+  margin-bottom: 1.563rem;
   margin-left: auto;
   margin-right: auto;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 .restaurant-image {
@@ -369,7 +369,7 @@
 
 .restaurant-info {
   text-align: left;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
 }
 
 .restaurant-name {
@@ -390,17 +390,17 @@
 
 footer {
   font-size: 0.85rem;
-  padding: 20px 0;
+  padding: 1.25rem 0;
   line-height: 1.6;
   background: #242323;
 }
 
 .box__logo-image {
-  padding-left: 50px;
+  padding-left: 3.125rem;
 }
 
 .footer__logo-image {
-  max-width: 100px;
+  max-width: 6.25rem;
   height: auto;
   -webkit-filter: invert(100%);
           filter: invert(100%);
@@ -418,7 +418,7 @@ footer {
 }
 
 .icon_footer {
-  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
   font-weight: 700;
 }
 /*# sourceMappingURL=main.css.map */

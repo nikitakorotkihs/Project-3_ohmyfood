@@ -1,6 +1,7 @@
 @import '_config';
 @import '_menu-btns';
 @import 'explore-btn';
+@import 'menu-btn-before';
 
 .body {
     background-color: $primary-color;
@@ -29,8 +30,8 @@
     flex-wrap: wrap;
     justify-content: center;
     background: #DCDCDC;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
 }
 
 .location_icon{
@@ -48,23 +49,23 @@
     flex-direction: column;
     align-items: center;
     background: #FFFAF0;
-    padding-bottom: 100px;
+    padding-bottom: 6.25rem;
+}
 
-    &__greeting{
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-    }
+.home__greeting{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
 }
 
 .text-bold{
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: map-get($font-weights, "bold" );
 }
 
 .text-grey{
     color: grey;
-    font-size: 50px;
+    font-size: 3.125rem;
     max-width: 100%;
 }
 
@@ -84,7 +85,7 @@
     font-family: Helvetica;
     font-size: 4rem;
     font-weight: map-get($font-weights, "bold" );
-    padding-left: 3%;
+    padding-left: 3rem;
 }
 
 .menu-container{
@@ -93,7 +94,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 3.125rem;
 }
 
 
@@ -102,9 +103,9 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    padding-bottom: 100px;
-    padding-top: 100px;
-    padding-left: 3%;
+    padding-bottom: 6.25rem;
+    padding-top: 6.25rem;
+    padding-left: 3.125rem;
 
 }
 
@@ -113,69 +114,24 @@
     @include menu-btns; 
 }
 .btn-choose::before {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 0;
-    top: 50%;
-    height: 50px;
-    width: 50px;
-    border: 5px solid purple;
-    background: purple;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    flex-wrap: wrap;
+    @include menu-btn-before;
     content: '1';
-    justify-content: center;
-    align-content: center;
-    font-weight: map-get($font-weights, "bold" );
-    font-size: 2rem;
 }
 
 .btn-create{
     @include menu-btns; 
 }
 .btn-create::before{
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 0;
-    top: 50%;
-    height: 50px;
-    width: 50px;
-    border: 5px solid purple;
-    background: purple;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    flex-wrap: wrap;
+    @include menu-btn-before;
     content: '2';
-    justify-content: center;
-    align-content: center;
-    font-weight: map-get($font-weights, "bold" );
-    font-size: 2rem;
 }
 
 .btn-enjoy{
     @include menu-btns; 
 }
 .btn-enjoy::before{
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 0;
-    top: 50%;
-    height: 50px;
-    width: 50px;
-    border: 5px solid purple;
-    background: purple;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    flex-wrap: wrap;
+    @include menu-btn-before;
     content: '3';
-    justify-content: center;
-    align-content: center;
-    font-weight: map-get($font-weights, "bold" );
-    font-size: 2rem; 
 }
 
 .btn__text{
@@ -185,15 +141,15 @@
 
 .row_icon1{
     font-size: 3rem;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
     display: flex;
 }
 
 .row_icon2{
     font-size: 3rem;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
     display: flex;
     color: purple;
 }
@@ -201,11 +157,11 @@
 .poloroid{
     width: 85%;
     background-color: white;
-    margin-bottom: 25px;
+    margin-bottom: 1.563rem;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 8px;
+    border-radius: 0.5rem;
 
 }
 
@@ -217,7 +173,7 @@
 
 .restaurant-info{
     text-align: left;
-    padding: 10px 20px;
+    padding:0.625rem 1.25rem;
 }
 
 .restaurant-name{
@@ -231,18 +187,19 @@
 }
 
 footer {
-font-size: 0.85rem;
-padding: 20px 0;
-line-height: 1.6;
-background: #242323;
+    font-size: 0.85rem;
+    padding: 1.25rem 0;
+    line-height: 1.6;
+    background: #242323;
 }
+
 .box__logo-image{
-padding-left: 50px;
+padding-left: 3.125rem;
 
 }
 
 .footer__logo-image {
-    max-width: 100px;
+    max-width: 6.25rem;
     height: auto;
     filter: invert(100%); 
 }
@@ -255,7 +212,7 @@ padding-left: 50px;
 }
 
 .icon_footer{
-padding-bottom: 10px;
-font-weight: map-get($font-weights, "bold" );
+    padding-bottom: 0.625rem;
+    font-weight: map-get($font-weights, "bold" );
     
 }
