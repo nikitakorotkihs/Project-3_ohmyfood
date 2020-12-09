@@ -11,32 +11,34 @@
     flex-wrap: wrap;
 }
 
-.logo-image { 
-    max-width: 400px;
+.header__logo-image{
+    max-width: 100%;
     height: auto;
-    justify-content: center;
+    display: flex;
     align-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
 }
 
-.page_header{
-    background: #DCDCDC;
+.logo-image { 
+    max-width: 100%;
+    height: auto;
 }
-.section_header{
+
+.location__header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background: #DCDCDC;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.row_icon{
+.location_icon{
     padding-right: 0.8rem;
 }
 
-.section_header{
-    padding-top: 20px;
-    padding-bottom: 20px;
-
+.location_text{
+    font-weight: map-get($font-weights, "bold" );
 }
 
 .home{
@@ -78,49 +80,102 @@
 	top:1px;
 }
 
+.menu_header{
+    font-family: Helvetica;
+    font-size: 4rem;
+    font-weight: map-get($font-weights, "bold" );
+    padding-left: 3%;
+}
+
+.menu-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+
 .menu{
    align-items: center;
     background-color: white;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     padding-bottom: 100px;
+    padding-top: 100px;
+    padding-left: 3%;
 
-
-
-    &__header{
-        padding: 3rem 5rem;
-        font-size: 3rem;
-        font-weight: map-get($font-weights, bold );
-    
-    }
 }
 
-.btn--choose{
+
+.btn-choose{
     @include menu-btns; 
 }
+.btn-choose::before {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 0;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    border: 5px solid purple;
+    background: purple;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    content: '1';
+    justify-content: center;
+    align-content: center;
+    font-weight: map-get($font-weights, "bold" );
+    font-size: 2rem;
+}
 
-.btn--create{
+.btn-create{
     @include menu-btns; 
 }
-.btn--enjoy{
+.btn-create::before{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 0;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    border: 5px solid purple;
+    background: purple;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    content: '2';
+    justify-content: center;
+    align-content: center;
+    font-weight: map-get($font-weights, "bold" );
+    font-size: 2rem;
+}
+
+.btn-enjoy{
     @include menu-btns; 
 }
-
-.row_icon1{
-font-size: 2rem;
-padding-right: 100px;
-display: flex;
-
-}
-
-.fa-stack{
-    color: purple;
-}
-
-.row_icon2{
-    font-size: 3rem;
-    padding-right: 100px;
+.btn-enjoy::before{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 0;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    border: 5px solid purple;
+    background: purple;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    content: '3';
+    justify-content: center;
+    align-content: center;
+    font-weight: map-get($font-weights, "bold" );
+    font-size: 2rem; 
 }
 
 .btn__text{
@@ -128,6 +183,20 @@ display: flex;
     align-self: center;
 }
 
+.row_icon1{
+    font-size: 3rem;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+}
+
+.row_icon2{
+    font-size: 3rem;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    color: purple;
+}
 
 .poloroid{
     width: 85%;
