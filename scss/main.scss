@@ -1,17 +1,18 @@
 @import '_config';
-@import '_menu-btns';
-@import 'explore-btn';
-@import 'menu-btn-before';
+@import '_home-page-menu-btn';
+@import 'order-btn' ;
+@import 'footer-restaurants' ;
 
 .body {
-    background-color: $primary-color;
+    background-color: rgb(240, 240, 240);
     justify-content: center;
     max-width: 100%;
-    max-height: auto;
     display: flex;
-    flex-wrap: wrap;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* Home Page */
 
 .header__logo-image{
     max-width: 100%;
@@ -238,41 +239,147 @@
 
 footer {
     font-size: 0.85rem;
-    padding: 1.25rem 0;
     line-height: 1.6;
     background: #242323;
- margin-top: 10rem;
+    margin-top: 3rem;
 }
 
-.box__logo-image{
-padding-left: 3.125rem;
-
+.box_logo-image{
+    padding-left: 3.125rem;
 }
 
-.footer__logo-image {
-    max-width: 9.25rem;
-    height: auto;
-    filter: invert(100%); 
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.footer_logo-image {
+@include footer_logo-image
 }
-
-.footer__container{
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    
+ 
+.footer_container{
+    @include footer_container
 }
 
 .footer_icon{
-    font-size: 20px;
-    padding-bottom: 0.625rem;
-    font-weight: map-get($font-weights, "bold" );
+@include footer_icon
 }
 
 .footer-text{
-    font-size: 20px;
-    padding-bottom: 0.625rem;
-    font-weight: map-get($font-weights, "bold" );
-    font-family: Arial, Helvetica, sans-serif;    
+@include footer-text    
 }
+
+
+
+
+
+
+/* Restaurant Item Choices */
+
+
+
+
+.icon-back-arrow{
+    position: absolute; top:2.5rem; left:2.5rem;
+    font-size: 48px;
+}
+
+.restaurant-menu{
+    transform: translateY(-7rem);
+    background-color: rgb(240, 240, 240);
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+}
+
+.restaurant-bar{
+    max-width: 100%;
+    height: 2.5em;
+    display: flex;
+    font-size: 2rem;
+    font-style: italic;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: map-get($font-weights, "bold" );
+    background-color: rgb(240, 240, 240);
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 3.125rem;
+    padding-right:3.125rem;
+}
+
+.restaurant-courses{
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-header{
+    text-align: left;
+    font-family: Trebuchet, sans-serif;
+    color: grey;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
+
+.line {
+    width: 2.5rem;
+    text-align: left;
+    margin-left: 0;
+    border: 1px solid green;
+}
+
+.restaurant-menu-container{
+    width: 90%;
+    border: none;
+    color: white;
+    padding: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: Trebuchet, sans-serif;
+    margin: 0.5rem 0.5rem;
+    background: #ffffff;
+    color: rgb(3, 0, 0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+
+}
+
+.dish-container{
+    width: 80%;
+    text-align: left;
+
+}
+
+.menu-item-name{
+    font-weight: map-get($font-weights, "bold" );
+    padding-bottom: 0.3rem;
+}
+
+.menu-item-ingredients{
+    color: grey;
+}
+
+.menu-item-price{
+    font-weight: map-get($font-weights, "bold" );
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.order-container{
+    @include order-container
+}
+
+.order-btn{
+    @include order-btn
+}
+
+.restaurant-footer {
+@include restaurant-footer
+}
+
+
+

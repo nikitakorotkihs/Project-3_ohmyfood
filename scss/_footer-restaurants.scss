@@ -1,0 +1,38 @@
+@mixin restaurant-footer {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    background: #242323;
+    margin-top: 3rem;
+}
+
+@mixin box_logo-image{
+    padding-left: 3.125rem;
+}
+
+@mixin footer_logo-image {
+    max-width: 9.25rem;
+    height: auto;
+    filter: invert(100%); 
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+@mixin footer_container{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin footer_icon{
+    font-size: 20px;
+    padding-bottom: 0.625rem;
+    font-weight: map-get($font-weights, "bold" );
+}
+
+@mixin footer-text{
+    font-size: 20px;
+    padding-bottom: 0.625rem;
+    font-weight: map-get($font-weights, "bold" );
+    font-family: Arial, Helvetica, sans-serif;    
+}
+

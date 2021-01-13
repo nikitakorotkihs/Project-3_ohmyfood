@@ -1,18 +1,16 @@
 .body {
-  background-color: #F0F8FF;
+  background-color: #f0f0f0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 100%;
-  max-height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Home Page */
 .header__logo-image {
   max-width: 100%;
   height: auto;
@@ -448,17 +446,16 @@
 
 footer {
   font-size: 0.85rem;
-  padding: 1.25rem 0;
   line-height: 1.6;
   background: #242323;
-  margin-top: 10rem;
+  margin-top: 3rem;
 }
 
-.box__logo-image {
+.box_logo-image {
   padding-left: 3.125rem;
 }
 
-.footer__logo-image {
+.footer_logo-image {
   max-width: 9.25rem;
   height: auto;
   -webkit-filter: invert(100%);
@@ -467,7 +464,7 @@ footer {
   padding-bottom: 1rem;
 }
 
-.footer__container {
+.footer_container {
   color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -489,5 +486,182 @@ footer {
   padding-bottom: 0.625rem;
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Restaurant Item Choices */
+.icon-back-arrow {
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+  font-size: 48px;
+}
+
+.restaurant-menu {
+  -webkit-transform: translateY(-7rem);
+          transform: translateY(-7rem);
+  background-color: #f0f0f0;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+}
+
+.restaurant-bar {
+  max-width: 100%;
+  height: 2.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  font-style: italic;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 700;
+  background-color: #f0f0f0;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-left: 3.125rem;
+  padding-right: 3.125rem;
+}
+
+.restaurant-courses {
+  max-height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-header {
+  text-align: left;
+  font-family: Trebuchet, sans-serif;
+  color: grey;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+.line {
+  width: 2.5rem;
+  text-align: left;
+  margin-left: 0;
+  border: 1px solid green;
+}
+
+.restaurant-menu-container {
+  width: 90%;
+  border: none;
+  color: white;
+  padding: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: Trebuchet, sans-serif;
+  margin: 0.5rem 0.5rem;
+  background: #ffffff;
+  color: #030000;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  cursor: pointer;
+}
+
+.dish-container {
+  width: 80%;
+  text-align: left;
+}
+
+.menu-item-name {
+  font-weight: 700;
+  padding-bottom: 0.3rem;
+}
+
+.menu-item-ingredients {
+  color: grey;
+}
+
+.menu-item-price {
+  font-weight: 700;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.order-container {
+  max-width: 100%;
+  height: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.order-btn {
+  width: 5rem;
+  height: 5rem;
+  -webkit-box-shadow: 3px 4px 0px 0px #bec7ca;
+          box-shadow: 3px 4px 0px 0px #bec7ca;
+  background-color: #9400D3;
+  border-radius: 50px;
+  border: 1px solid #f1ddf1;
+  color: white;
+  font-family: Arial;
+  font-size: 30px;
+  padding: 0.1rem 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.restaurant-footer {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  background: #242323;
+  margin-top: 3rem;
 }
 /*# sourceMappingURL=main.css.map */
