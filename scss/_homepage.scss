@@ -92,8 +92,7 @@
     @include explore-btn
 }
 .explore-btn:hover {
-	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
-	background-color:#bab1ba;
+	background-color:#463146;
 }
 .explore-btn:active {
 	position:relative;
@@ -109,12 +108,9 @@
 }
 
 .menu{
-   align-items: center;
     background-color: white;
     display: flex;
     flex-direction: column;
-    padding-top: 6.25rem;
-    padding-left: 3.125rem;
 }
 
 .menu-container{
@@ -123,6 +119,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
+    align-items: center;
     padding-bottom: 3.125rem;
 }
 
@@ -259,3 +257,37 @@
 .footer-text{
     @include footer-text    
 }
+
+
+@media (min-width:961px) {
+
+    .animation-section{
+        height: 85rem;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        animation: 3s ease-out 0s 1 slideInFromLeft;
+    }
+
+    .poloroid{
+        height: 38rem;
+        width: 65rem;
+    }
+
+    .restaurant-info{
+        padding-top: 1rem;
+    }
+
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}  
+

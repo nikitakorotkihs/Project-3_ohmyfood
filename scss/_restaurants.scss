@@ -129,12 +129,18 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
-    transition: transform 300ms ease-in-out;
+    &:hover .menu_item__slider{
+        transition: transform 900ms ease-in-out;
+        font-size: 36px;
+        color: green;
+        margin-left: 2rem;
+    }
+} 
+
+.menu_item__slider{
+    color:  #ffffff;
 }
 
-.trigger:hover{
-    transform: translate(-150px, -5px); 
-}
 
 .order-container{
     @include order-container

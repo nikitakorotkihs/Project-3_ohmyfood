@@ -30,8 +30,13 @@
 	font-family:Arial;
 	font-size:30px;
 	padding:25px 25px;
-	text-decoration:none;
+    text-decoration:none;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    text-align: center;
+    overflow: hidden;
 }
+
 
 @mixin menu-btn-before{
     position: absolute;
