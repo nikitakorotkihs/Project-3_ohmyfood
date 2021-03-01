@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../scss/-order-btn.scss"
-    ],
-    "names": [],
-    "file": "-order-btn.css"
-}

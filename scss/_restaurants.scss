@@ -67,6 +67,7 @@
     width: 95%;
     justify-content: center;
     align-items: center;
+    
 }
 
 .section-header{
@@ -105,7 +106,36 @@
     display: flex;
     flex-direction: row;
     cursor: pointer;
+    &:hover .menu_item__slider{
+        transform: translateX(0);
+        background: green;
+    }
+    &:hover .menu-item-price{
+        margin-right: 4rem;
+    }
 }
+
+.menu_item__slider--checked_circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.2rem;
+    color:  rgb(240, 240, 240);
+    transition: .5s;
+}
+
+.menu_item__slider{
+    right: 0;
+    width: 4rem;
+    height: 5rem;
+    border-radius: 1.2rem;
+    transform: translateX(100%);
+    transition: .5s;
+    margin: -1rem;
+
+}
+
 
 .dish-container{
     width: 80%;
@@ -127,20 +157,11 @@
     height: auto;
     display: flex;
     flex-direction: row;
+    transition: .5s;
     justify-content: flex-end;
     align-items: flex-end;
-    &:hover .menu_item__slider{
-        transition: transform 900ms ease-in-out;
-        font-size: 36px;
-        color: green;
-        margin-left: 2rem;
-    }
+
 } 
-
-.menu_item__slider{
-    color:  #ffffff;
-}
-
 
 .order-container{
     @include order-container
@@ -152,4 +173,13 @@
 
 .restaurant-footer {
 @include restaurant-footer
+}
+
+.animation-slide{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: 3s ease-out 0s 1 slideInFromLeft;
 }

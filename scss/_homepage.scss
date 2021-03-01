@@ -177,6 +177,11 @@
     padding-bottom: 2rem;
 }
 
+.animation-section{
+    justify-content: center;
+    animation: 3s ease-out 0s 1 slideInFromLeft;
+}
+
 .poloroid{
     max-width: 85%;
     max-height: 50rem;
@@ -259,21 +264,41 @@
 }
 
 
-@media (min-width:961px) {
+
+@media (min-width:1024px) {
+
+
+    .poloroid{
+        height: 38rem;
+        width: 65rem;
+    }
+
+    .restaurant-info{
+        padding-top: 1rem;
+    }
+
+}
+
+@media (min-width:1280px) {
 
     .animation-section{
-        height: 85rem;
+        height: auto;
         width: auto;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        animation: 3s ease-out 0s 1 slideInFromLeft;
+        justify-items: center;
+        
+    }
+
+    .box1{
+        width: auto;
     }
 
     .poloroid{
-        height: 38rem;
-        width: 65rem;
+        
+        width: 40rem;
     }
 
     .restaurant-info{
