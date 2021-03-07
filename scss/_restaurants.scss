@@ -8,7 +8,6 @@
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .icon-back-arrow{
     position: absolute; top:2.5rem; left:2.5rem;
     font-size: 48px;
@@ -19,9 +18,8 @@
         color: grey;
     }
 }
-
 .restaurant-menu{
-    transform: translateY(-7rem);
+
     background-color: rgb(240, 240, 240);
     border-top-left-radius: 3rem;
     border-top-right-radius: 3rem;
@@ -31,7 +29,6 @@
     align-items: center;
     max-width: auto;
 }
-
 .restaurant-bar{
     width: 90%;
     height: 2.5em;
@@ -49,7 +46,6 @@
     padding-left: 3.125rem;
     padding-right:3.125rem;
 }
-
 .restaurant-bar-icon{
     font-size: 42px;
     :hover{
@@ -59,17 +55,14 @@
         color: purple;
     }
 }
-
 .restaurant-courses{
     max-height: auto;
     display: flex;
     flex-direction: column;
     width: 95%;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;   
 }
-
 .section-header{
     height:5% ;
     width: 100%;
@@ -81,14 +74,12 @@
     padding-left: 2.5rem;
     margin-top: 1rem;
 }
-
 .line {
     width: 2.5rem;
     text-align: left;
     margin-left: 0;
     border: 1px solid green;
 }
-
 .restaurant-menu-container{
     width: 90%;
     border: none;
@@ -111,10 +102,9 @@
         background: green;
     }
     &:hover .menu-item-price{
-        margin-right: 4rem;
+        margin-right: 2rem;
     }
 }
-
 .menu_item__slider--checked_circle {
     position: absolute;
     top: 50%;
@@ -124,7 +114,6 @@
     color:  rgb(240, 240, 240);
     transition: .5s;
 }
-
 .menu_item__slider{
     right: 0;
     width: 4rem;
@@ -133,24 +122,18 @@
     transform: translateX(100%);
     transition: .5s;
     margin: -1rem;
-
 }
-
-
 .dish-container{
     width: 80%;
     text-align: left;
 }
-
 .menu-item-name{
     font-weight: map-get($font-weights, "bold" );
     padding-bottom: 0.3rem;
 }
-
 .menu-item-ingredients{
     color: grey;
 }
-
 .menu-item-price{
     font-weight: map-get($font-weights, "bold" );
     width: 20%;
@@ -160,26 +143,30 @@
     transition: .5s;
     justify-content: flex-end;
     align-items: flex-end;
-
 } 
-
 .order-container{
     @include order-container
 }
-
 .order-btn{
     @include order-btn
 }
-
 .restaurant-footer {
 @include restaurant-footer
 }
-
 .animation-slide{
     width: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    animation: 3s ease-out 0s 1 slideInFromLeft;
+    animation: 2s ease-out 0s 1 slideInFromLeft;
+}
+footer{
+    width: 100%;
+}
+
+.move-me-up{
+    position: relative;
+    z-index: 1;
+    top: -3rem;
 }
