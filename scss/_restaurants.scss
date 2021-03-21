@@ -19,7 +19,6 @@
     }
 }
 .restaurant-menu{
-
     background-color: rgb(240, 240, 240);
     border-top-left-radius: 3rem;
     border-top-right-radius: 3rem;
@@ -28,6 +27,9 @@
     justify-content: center;
     align-items: center;
     max-width: auto;
+    position: relative;
+    z-index: 1;
+    top: -2.5rem;
 }
 .restaurant-bar{
     width: 90%;
@@ -153,20 +155,74 @@
 .restaurant-footer {
 @include restaurant-footer
 }
-.animation-slide{
-    width: auto;
+.animation-slideEntre{
+    width: 90%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    animation: 2s ease-out 0s 1 slideInFromLeft;
+    animation: 2.5s ease-out 0s 1 slideInFromLeft;
 }
+.animation-sliderMain{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: 3s ease-out 0s 1 slideInFromLeft;
+}
+
+.animation-slideDesserts{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: 3.5s ease-out 0s 1 slideInFromLeft;
+}
+
+.animation-slideOrder{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: 4.5s ease-out 0s 1 slideInFromLeft;
+}
+
 footer{
     width: 100%;
 }
 
-.move-me-up{
-    position: relative;
-    z-index: 1;
-    top: -3rem;
+@keyframes slideInFromLeft {
+	0% { transform: translateX(-100%); }
+	100% { transform: translateX(0px); }
+}
+
+.flip {
+	backface-visibility: visible;
+	animation: flip 2.5s ease 1;
+}
+
+@keyframes flip {
+	0% {
+		transform: perspective(400px) rotateY(0);
+		animation-timing-function: ease-out;
+	}
+	40% {
+		transform: perspective(400px) translateZ(150px) rotateY(170deg);
+		animation-timing-function: ease-out;
+	}
+	50% {
+		transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+		animation-timing-function: ease-in;
+	}
+	80% {
+		transform: perspective(400px) rotateY(360deg) scale(.95);
+		animation-timing-function: ease-in;
+	}
+	100% {
+		transform: perspective(400px) scale(1);
+		animation-timing-function: ease-in;
+	}
 }
