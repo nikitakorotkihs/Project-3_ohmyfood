@@ -236,8 +236,8 @@
   top: 50%;
   height: 3.125rem;
   width: 3.125rem;
-  border: 5px solid purple;
-  background: purple;
+  border: 5px solid #8f018f;
+  background: #740174;
   color: white;
   border-radius: 50%;
   display: -webkit-box;
@@ -291,8 +291,8 @@
   top: 50%;
   height: 3.125rem;
   width: 3.125rem;
-  border: 5px solid purple;
-  background: purple;
+  border: 5px solid #8f018f;
+  background: #740174;
   color: white;
   border-radius: 50%;
   display: -webkit-box;
@@ -346,8 +346,8 @@
   top: 50%;
   height: 3.125rem;
   width: 3.125rem;
-  border: 5px solid purple;
-  background: purple;
+  border: 5px solid #8f018f;
+  background: #740174;
   color: white;
   border-radius: 50%;
   display: -webkit-box;
@@ -530,8 +530,10 @@
 }
 
 .fade-in-down {
-  -webkit-animation: fade-in-down 5s ease 1;
-          animation: fade-in-down 5s ease 1;
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s;
+  -webkit-animation: fade-in-down 7s ease 1;
+          animation: fade-in-down 7s ease 1;
 }
 
 @-webkit-keyframes fade-in-down {
@@ -875,8 +877,8 @@
 .menu_item__slider {
   right: 0;
   width: 4rem;
-  height: 5rem;
-  border-radius: 1.2rem;
+  height: 5.5;
+  border-radius: 1rem;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: .5s;

@@ -237,7 +237,8 @@
     @include footer-text    
 }
 .fade-in-down {
-    animation: fade-in-down 5s ease 1;
+    animation-delay: 5.5s;
+    animation: fade-in-down 7s ease 1;
 }
 @keyframes fade-in-down {
     0% {
