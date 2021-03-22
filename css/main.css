@@ -874,7 +874,6 @@
 .menu_item__slider {
   right: 0;
   width: 4rem;
-  height: 5.5;
   border-radius: 1rem;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
