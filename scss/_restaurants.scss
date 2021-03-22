@@ -26,7 +26,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: auto;
     position: relative;
     z-index: 1;
     top: -2.5rem;
@@ -58,7 +57,6 @@
     }
 }
 .restaurant-courses{
-    max-height: auto;
     display: flex;
     flex-direction: column;
     width: 95%;

@@ -112,7 +112,6 @@
 
 .container_text-grey {
   max-width: 100%;
-  max-height: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -741,7 +740,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: auto;
   position: relative;
   z-index: 1;
   top: -2.5rem;
@@ -786,7 +784,6 @@
 }
 
 .restaurant-courses {
-  max-height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
