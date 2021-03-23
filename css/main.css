@@ -172,15 +172,19 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .menu-container {
   position: relative;
-  width: 100%;
+  width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,30 +205,27 @@
 
 .btn-choose {
   position: relative;
+  width: 95%;
+  height: 5rem;
   border: none;
-  color: white;
+  color: #030000;
+  background: #ffffff;
   padding: 50px 10px;
-  text-align: center;
   text-decoration: none;
   font-size: 16px;
   margin: 4px 2px;
-  background: #ffffff;
   color: #030000;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
-  width: 95%;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
 }
 
 .btn-choose::before {
@@ -256,30 +257,27 @@
 
 .btn-create {
   position: relative;
+  width: 95%;
+  height: 5rem;
   border: none;
-  color: white;
+  color: #030000;
+  background: #ffffff;
   padding: 50px 10px;
-  text-align: center;
   text-decoration: none;
   font-size: 16px;
   margin: 4px 2px;
-  background: #ffffff;
   color: #030000;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
-  width: 95%;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
 }
 
 .btn-create::before {
@@ -311,30 +309,27 @@
 
 .btn-enjoy {
   position: relative;
+  width: 95%;
+  height: 5rem;
   border: none;
-  color: white;
+  color: #030000;
+  background: #ffffff;
   padding: 50px 10px;
-  text-align: center;
   text-decoration: none;
   font-size: 16px;
   margin: 4px 2px;
-  background: #ffffff;
   color: #030000;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
-  width: 95%;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
 }
 
 .btn-enjoy::before {
@@ -369,6 +364,21 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  font-family: Arial;
+}
+
+.btn__text-enjoy {
+  font-size: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: Arial;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .row_icon1 {
@@ -378,6 +388,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .row_icon2 {
@@ -387,6 +406,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: purple;
 }
 
@@ -561,81 +589,6 @@
   }
 }
 
-@media all and (min-width: 1280px) {
-  .fade-in-down {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .poloroid {
-    width: 40rem;
-  }
-  .restaurant-info {
-    padding-top: 1rem;
-  }
-}
-
-@-webkit-keyframes loader-ani {
-  100% {
-    opacity: 0;
-    z-index: -10;
-  }
-}
-
-@keyframes loader-ani {
-  100% {
-    opacity: 0;
-    z-index: -10;
-  }
-}
-
-@-webkit-keyframes bounce {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  25% {
-    -webkit-transform: translateY(2rem);
-            transform: translateY(2rem);
-  }
-  75% {
-    -webkit-transform: translateY(-2rem);
-            transform: translateY(-2rem);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes bounce {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  25% {
-    -webkit-transform: translateY(2rem);
-            transform: translateY(2rem);
-  }
-  75% {
-    -webkit-transform: translateY(-2rem);
-            transform: translateY(-2rem);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
 .loader {
   position: fixed;
   height: 100%;
@@ -694,6 +647,98 @@
   background-color: #99e2d0;
   -webkit-animation-delay: 0.75s;
           animation-delay: 0.75s;
+}
+
+@-webkit-keyframes loader-ani {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@keyframes loader-ani {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
+  }
+  75% {
+    -webkit-transform: translateY(-2rem);
+            transform: translateY(-2rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
+  }
+  75% {
+    -webkit-transform: translateY(-2rem);
+            transform: translateY(-2rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .fade-in-down {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .poloroid {
+    width: 40rem;
+  }
+  .restaurant-info {
+    padding-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .btn__text-enjoy {
+    max-width: 16rem;
+    font-size: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    justify-items: center;
+    text-align: center;
+    font-family: Arial;
+  }
 }
 
 /* Restaurant Pages / Item Choices */
